@@ -1,61 +1,56 @@
 export default function Home() {
   return (
-    <main>
+    <main className="bg-[#37145f] pb-32">
       {/* Hero Section */}
-      <section className="bg-primary text-white text-center py-20">
-        <div className="container mx-auto px-6">
-          <h1 className="text-5xl font-bold">Welcome to Triple A</h1>
-          <p className="mt-4 text-lg">
-            Ambassadors Align - Building a Better Future Together
-          </p>
-        </div>
-      </section>
-            {/* About Us Section */}
-            <section id="about" className="py-16 bg-white text-center">
-        <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-primary">About Us</h2>
-          <p className="mt-4 text-lg text-gray-700 max-w-2xl mx-auto">
+      <header className="text-center pt-40 pb-20 bg-[#37145f] text-white">
+        <h1 className="text-5xl font-extrabold tracking-wider">
+          Welcome to <span className="text-[#F5F5F5]">Triple A</span>
+        </h1>
+        <p className="text-xl text-gray-300 mt-4">
+          Ambassadors Align - Building a Better Future Together
+        </p>
+      </header>
+
+      {/* Content Sections inside Dark Purple Background */}
+      <div className="container mx-auto px-4 md:px-16">
+        {/* About Us Section */}
+        <section id="about" className="text-center py-20 bg-white text-gray-900 rounded-lg shadow-xl mx-auto max-w-5xl">
+          <h2 className="text-4xl font-bold text-[#180033]">About Us</h2>
+          <p className="text-lg text-gray-700 mt-4 mx-auto max-w-3xl">
             Triple A is a school association dedicated to aligning ambassadors toward a shared vision of progress, leadership, and collaboration.
           </p>
-        </div>
-      </section>
-            {/* Membership Section */}
-            <section id="membership" className="py-16 bg-gray-100 text-center">
-        <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-primary">Membership</h2>
-          <p className="mt-4 text-lg text-gray-700 max-w-2xl mx-auto">
+        </section>
+
+        {/* Membership Section */}
+        <section id="membership" className="text-center py-20 bg-white text-gray-900 rounded-lg shadow-xl mx-auto max-w-5xl mt-10">
+          <h2 className="text-4xl font-bold text-[#37145f]">Membership</h2>
+          <p className="text-lg text-gray-700 mt-4 mx-auto max-w-3xl">
             Become a part of Triple A and connect with like-minded individuals passionate about leadership and change.
           </p>
-          <button className="mt-6 px-6 py-3 bg-primary text-white rounded-lg hover:bg-purple-700 transition">
+          <a href="#membership" className="mt-6 inline-block bg-[#180033] text-white px-6 py-3 rounded-lg shadow-md hover:bg-[#220044] transition">
             Join Now
-          </button>
-        </div>
-      </section>
-            {/* News Section */}
-            <section id="news" className="py-16 bg-white text-center">
-        <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-primary">Latest News</h2>
-          <p className="mt-4 text-lg text-gray-700 max-w-2xl mx-auto">
-            Stay updated with the latest happenings, events, and announcements from Triple A.
-          </p>
+          </a>
+        </section>
 
-          {/* News Items */}
-          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="bg-gray-100 p-6 rounded-lg shadow">
-              <h3 className="text-xl font-bold text-primary">Upcoming Event</h3>
-              <p className="mt-2 text-gray-700">Join us for our leadership summit next month!</p>
+        {/* News Section */}
+        <section id="news" className="text-center py-24 bg-white text-gray-900 rounded-lg shadow-xl mx-auto max-w-5xl mt-10">
+          <h2 className="text-4xl font-bold text-[#37145f] mb-10">Latest News</h2>
+          <div className="grid grid-cols-1 gap-12 mt-10">
+            <div className="p-8 bg-gray-100 rounded-3xl shadow-lg mx-6">
+              <h3 className="text-2xl font-bold text-[#180033]">Upcoming Event</h3>
+              <p className="text-gray-700 mt-4">Join us for our leadership summit next month!</p>
             </div>
-            <div className="bg-gray-100 p-6 rounded-lg shadow">
-              <h3 className="text-xl font-bold text-primary">New Partnership</h3>
-              <p className="mt-2 text-gray-700">Triple A collaborates with top schools for new programs.</p>
+            <div className="p-8 bg-gray-100 rounded-3xl shadow-lg mx-6">
+              <h3 className="text-2xl font-bold text-[#180033]">New Partnership</h3>
+              <p className="text-gray-700 mt-4">Triple A collaborates with top schools for new programs.</p>
             </div>
-            <div className="bg-gray-100 p-6 rounded-lg shadow">
-              <h3 className="text-xl font-bold text-primary">Volunteer Opportunities</h3>
-              <p className="mt-2 text-gray-700">Sign up to be part of our next community project.</p>
+            <div className="p-8 bg-gray-100 rounded-3xl shadow-lg mx-6">
+              <h3 className="text-2xl font-bold text-[#180033]">Volunteer Opportunities</h3>
+              <p className="text-gray-700 mt-4">Sign up to be part of our next community project.</p>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
   );
 }
